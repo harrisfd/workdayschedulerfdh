@@ -2,20 +2,33 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  color: #1f1f1f;
+}
+
+/* Jumbotron */
+h1,
+p.lead {
+  font-family: 'Poppins', sans-serif;
+}
+
+}
+p#currentDay.lead {
+  font-weight: bold;
 }
 
 textarea{
-  background: transparent;
+  background: #74992e;;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
+  font-size: 22px;
   padding: 10px;
 }
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: #74992e;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -28,6 +41,7 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+  padding-bottom: 10px;
 }
 
 .row {
@@ -38,6 +52,8 @@ textarea{
 
 .hour {
   background-color: #ffffff;
+  font-weight: bold;
+  height: 79px;
   color: #000000;
   border-top: 1px dashed #000000;
 }
@@ -61,11 +77,19 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: rosybrown;
   color: white;
+  text-align: center;
+  padding: 20px 30px;
+  
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+footer {
+  text-align: center;
+  padding-top: 16px;
 }
