@@ -18,7 +18,7 @@ https://harrisfd.github.io/workdayschedulerfdh/
 
 ## Usage
 
-<img src="./workdayschedulerfdh/workdayschedulerfdh.jpg" alt="JPG of the application"/>
+<img src="./assets/image/fdh.jpg" alt="JPG of the application"/>
 
 The following daily planner is used for the busy individual who can add important events to a daily planner. The daily planner consists of a calendar with time blocks and when event is saved, it is saved in a local storage. 
 
