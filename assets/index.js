@@ -1,3 +1,17 @@
+var hour = moment().hour()
+console.log(hour)
+var textarea = $("textarea")
+for (let i = 0; i < textarea.length; i++) {
+    if (i + 9 < hour) {
+        $(textarea[i]).addClass("past");
+    }
+    if (i + 9 == hour) {
+        $(textarea[i]).addClass("present");
+    }
+    if (i + 9 > hour) {
+        $(textarea[i]).addClass("future");
+    }
+}
 $(".fas").on("click", function () {
     console.log("clicked")
     var text = $(this).parent().prev().val()
@@ -51,7 +65,7 @@ function getTasks() {
         console.log(Object.keys(loadedTasks).length)
         for (const [key, value] of Object.entries(loadedTasks)) {
             console.log(`${key}: ${value}`);
-
+            $(`#${key}`).val(value)
         }
     }
     var loadedTasks = ({
